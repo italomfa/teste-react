@@ -9,5 +9,4 @@ import Pessoa from "./Pessoa";
 const pessoa = new Pessoa("Ítalo!!");
 console.log(pessoa.toString());
 
-/*console.log("teste");*/
 
