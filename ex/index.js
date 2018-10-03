@@ -1,12 +1,27 @@
  /*
 Obs:
-
 - somente os arquivos referenciados aqui, serão compilados pelo webpack 
+- spread (...) gera um clone de um determinado objeto
 
 */
 
-import Pessoa from "./Pessoa";
-const pessoa = new Pessoa("Ítalo!!");
-console.log(pessoa.toString());
+const produto = {
+    nome: "Smart TV LG",
+    preco: 1399.00,
+    desconto: 0.05
+}
+
+function clone(objeto){
+    return {
+        ...objeto
+    }
+}
+
+const produtoClone = clone(produto);
+produtoClone.nome = "Smart TV Samsung";
+console.log(produto, produtoClone);
+
+
+console.log("pessoa");
 
 

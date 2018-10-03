@@ -26,13 +26,15 @@ module.exports = {
             loader -> qual será o loader utilizado para carregar os arquivos js
             exclude -> o que não deve ser lido pelo loader
             query presets -> o que eu quero que o loader faça ou interprete.
+            query plugins -> plugins do loader
 
             */
             test: /.js?$/,
             loader: "babel-loader",
             exclude: /node_modules/,
             query:{
-                presets: ["es2015"]
+                presets: ["es2015"],
+                plugins: ["transform-object-rest-spread"]
             }
         }]
     }
