@@ -1,4 +1,5 @@
 const webpack = require("webpack");
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     /* Representa a config do webpack.    
@@ -19,6 +20,9 @@ module.exports = {
         port: 8090,
         contentBase: "./public" /*diretório base de tudo que será carregado*/
     },
+    plugins:[
+        new ExtractTextPlugin("app.js")
+    ],
     module:{
         loaders: [{
             /*
@@ -36,6 +40,9 @@ module.exports = {
                 presets: ["es2015", "react"],
                 plugins: ["transform-object-rest-spread"]
             }
+        }, {
+            test: /\.css$/,
+            loader: ExtractTextPlugin.extract("style-loader", "css-loader")
         }]
     }
 }
