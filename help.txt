@@ -1,15 +1,15 @@
-npm:
+Node:
+    - dentro de node_modules não há necessidade de usar o caminho relativo:
+        require('./obs.js'); require(webpack);
+
+npm (node):
     npm init -y => realiza o download de dependências
-    npm i --save-dev nomeDependencia@versao=> realiza o download de dependência X
+    npm i --save-dev nomeDependencia@versao => realiza o download de dependência X
     npm run dev => executa o servidor
 
-configs do webpack: 
     package.json, valor de dev para "scripts" => realiza configu para devServer    
 
-
-obs webpack:
+configs do webpack: 
+    webpack.config.js
     .\node_modules\.bin\webpack => build (obs: se determinado arquivo não estiver sendo utilizado/importado, o build não o contabilizará)
-
-obs node:
-    module.export{} => representa o que haverá dentro do objeto que implementa o método
 
