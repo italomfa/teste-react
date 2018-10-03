@@ -11,6 +11,13 @@
   "license": "ISC",
   "requires": true,
   "lockfileVersion": 1,
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  },
   "dependencies": {
     "accepts": {
       "version": "1.3.5",
@@ -2400,12 +2407,5 @@
         "window-size": "0.1.0"
       }
     }
-  },
-  "devDependencies": {
-    "babel-core": "^6.22.1",
-    "babel-loader": "^6.2.10",
-    "babel-preset-es2015": "^6.22.0",
-    "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.16.2"
   }
 }

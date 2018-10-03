@@ -3,7 +3,8 @@ const webpack = require('webpack');
 module.exports = {
     /* Representa a config do projeto.
     Loaders -> config do babel (transpiler para JS)
-    DevServer -> deploy
+    DevServer -> exclusivo para dev e próprio do webpack
+    Obs: __dirname = variável de ambiente do node.
      */
     entry: './ex/index.js',
     output:{
@@ -12,7 +13,7 @@ module.exports = {
     },
     devServer:{
         port: 8080,
-        contentBase: './public'
+        contentBase: './public' /*diretório base de tudo que será carregado*/
     },
     module:{
         loaders: [{
