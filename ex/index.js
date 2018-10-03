@@ -5,23 +5,12 @@ Obs:
 
 */
 
-const produto = {
-    nome: "Smart TV LG",
-    preco: 1399.00,
-    desconto: 0.05
-}
+import "react";
 
-function clone(objeto){
-    return {
-        ...objeto
-    }
-}
+export default props => (
+    <h1> Olá </h1>
+)
 
-const produtoClone = clone(produto);
-produtoClone.nome = "Smart TV Samsung";
-console.log(produto, produtoClone);
-
-
-console.log("pessoa");
+console.log("funcionou");
 
 
