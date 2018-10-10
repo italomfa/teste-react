@@ -21,7 +21,8 @@ module.exports = {
         contentBase: "./public" /*diretório base de tudo que será carregado*/
     },
     plugins:[
-        new ExtractTextPlugin("app.js")
+        /* Construtor com o nome do arquivo que será gerado.*/
+        new ExtractTextPlugin("app.css")
     ],
     module:{
         loaders: [{

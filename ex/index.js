@@ -1,7 +1,6 @@
  /*
 Obs:
 - somente os arquivos referenciados aqui, serão compilados pelo webpack 
-- spread (...) gera um clone de um determinado objeto
 
 */
 
