@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ComponenteTeste from './ComponenteTeste';
+import ComponenteTeste, { Primario, Secundario } from './ComponenteTeste';
 
-ReactDOM.render(<ComponenteTeste value="abc são letras"/>, document.getElementById('app'));
+ReactDOM.render(<div>
+    <Primario/>
+    <Secundario/>
+</div>, document.getElementById('app'));
